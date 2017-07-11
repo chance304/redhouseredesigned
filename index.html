@@ -1,0 +1,509 @@
+<!DOCTYPE html
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Redhouse | Redesigned</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/animate.js">                
+    </script>
+</head>
+
+<body id="page-top" data-Nspy="scroll" data-target=".navbar-fixed-top" onload="startLoop()">
+
+    <div class="vdo">
+     <center>
+    <video id="idle_video" src="video/red.mov" width="100%" playsinline autoplay loop onended="onVideoEnded()">
+    <source type="video/mp4">
+    </video>
+    </center>
+
+    <div class="overlay">
+            <center>
+                
+        <form >
+             <a class="page-scroll" href="#gored"><button class="btn " >Explore RED</button></a>
+             <a class="page-scroll" href="#contact"><button class="btn " >Contact Us</button></a>
+        </form>
+            </center>
+    </div>
+      
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+
+                <a class="navbar-brand page-scroll" href="#page-top">
+                <span><img src="img/red-logo1.jpg" width="90px" style="margin-top: -10px;"></span>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gored">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#wwedo">What We Do</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#hwedo">How We Do</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#partners">Our Partners</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Reach Us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header id="gored" class="intro">
+        <div class="intro-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                       <!--  <h1 class="brand-heading" style="@font-face {
+    font-family: Dax-Medium;
+    src: url('fonts/Dax-Medium.ttf');
+}
+font-family: Dax-Medium;"></h1> -->
+                        <!-- <p class="intro-text">We bring your brand into action and write your success story in RED
+                        </p>
+                        <a href="#contact" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section id="weare" class=" text-center" >
+        <div class="weare-section">
+            <div class="container-fluid" >
+                <div class="col-lg-8 col-lg-offset-2 ">
+                    <h2>We are</h2><h2 id="tagtitle" ></h2>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <div>
+                    <p class="text" id="tagdes"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+
+<section id="portfolio">
+    <div class="container portfolio_div">
+                <center><h2 style=" @font-face {
+    font-family: Dax-Medium;
+    src: url('fonts/Dax-Medium.ttf');
+}
+font-family: Dax-Medium;">Portfolio</h2></center>
+            <div class="row top-buffer">
+            <div class="col-md-3">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio1.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=iz5l8vVOLjI" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio2.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=352bs8NMza4" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio3.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=iz5l8vVOLjI" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio4.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=DPWL3T_HNvs" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+        </div><!-- End of Row -->
+
+
+        <div class="row top-buffer">
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio5.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=iz5l8vVOLjI" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio6.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=iz5l8vVOLjI" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio7.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=iz5l8vVOLjI" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+
+            <div class="col-md-3 ">
+                <div class="container_image">
+                    <img src="img/portfolio/portfolio8.png" alt="Avatar" class="image_image">
+                        <div class="overlay_image">
+                            <div class="overlay_text">
+                            <a href="https://www.youtube.com/watch?v=puidxvhrlNQ" target="_blank"><button>View Portfolio</button></a>
+                        </div>      
+                    </div><!-- Inside Image -->
+                </div><!-- End of Container Image -->
+            </div><!-- End of Column -->
+        </div><!-- End of Row -->
+
+
+
+    </div><!-- End of container -->
+</section>
+
+    <section id="obj" class="container-fluid text-center" >
+        <div class="row" >
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>What Defines Us</h2>
+                <br>
+                <div class="col-md-4">
+                    <i class="fa fa-clock-o fa-4x"></i>
+                    <br />
+                    <br />
+                    <h4>Mission</h4>
+                                                               
+                        <p class="objective" align="justify">We listen to our clients, build trust to provide best digital solutions according to their needs.</p>
+                    
+                </div>
+                <div class="col-md-4" style=" border-left: thick solid #ffffff;">
+                    <i class="fa fa-crosshairs fa-4x"></i>
+                    <br />
+                    <br />  
+                    <h4>Objectives</h4>
+                    <p class="objective" align="justify">Developing strong customer relation 
+                            Providing high quality Service
+                            Generate leads
+                            Increase brand awareness
+                            Increase customers market share</p>
+                </div>
+                <div class="col-md-4" style=" border-left: thick solid #ffffff;">
+                    <i class="fa fa-binoculars fa-4x"></i>
+                    <br />
+                    <br />
+                    <h4>Vision</h4>
+
+                    <p class="objective" align="justify">To build long term lasting business relationship with our clients worldwide; by providing them best innovative solutions in digital marketing field.</p>
+                </div>
+        </div>
+        </div>
+        </section>
+
+    <!-- What We Do Section -->
+    <section id="wwedo" class="container-fluid content-section text-center" style="font-size:16px;">
+        <div class="row" >
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2 style="@font-face {
+    font-family: Dax-Medium;
+    src: url('fonts/Dax-Medium.ttf');
+}
+font-family: Dax-Medium;">What We do</h2>
+                <div class="col-md-4">
+                    <img  src="img/brand.png">
+                    <p align="justify">A brand identity is much more than just a logo and color palette; it’s what sets an organization, person, product or service apart. Our branding work is always method-driven and data-inspired. We provide our clients with the superior quality creative work that includes them in the process and amaze them with the results.  Let's make your customers feel good about your brand!</p>
+                </div>
+                <div class="col-md-4">
+                    <img  src="img/graphic.png">
+                    <p align="justify">Don’t let your business fall behind, Red house team are ready with enough passion to handle all of your graphic design needs as:  Creative direction, Motion Graphics, info graphics, 2-D Animation and composting. We distinguish you out among your competitors, by keeping up with all of the current graphic design trends and technology.</p>
+                </div>
+                <div class="col-md-4">
+                    <img  src="img/video.png">
+                    <p align="justify">We combine technical expertise with a deep aesthetic sense to produce high quality videos. Our philosophy is to be creative and enjoy the work, via creating well-crafted, informative and interesting videos for clients in all sectors worldwide.</p>
+                </div>
+        </div>
+         <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-md-4">
+                    <img  src="img/webdev.png">
+                    <p align="justify">A group of professional web designers and developers, we are dedicated to create powerful, effective and engaging websites. Our unique design style and use of ultra-clean technology, combine to produce websites that boast exceptional search engine result positions, increase traffic and superior visitor loyalty</p>
+                </div>
+                <div class="col-md-4">
+                    <img  src="img/socia.png">
+                    <p align="justify">We offer on going social media community management, social media campaigns and promotions, paid social advertising management and detailed monthly reports. No matter the platform, we understand how to best use social media for business.</p>
+                </div>
+                <div class="col-md-4">
+                    <img  src="img/supporton.png" width="90px">
+                    <p align="justify">Contact us at any time, and we will assist you. Our 24/7 Customer Support team is ready and waiting.</p>
+                </div>
+        </div>  
+    </section>
+    
+<section id="partners">
+    <center>
+
+    <h1 id="clientHead">Our Partners</h1>
+    <table>
+      <tr>
+      <td>
+        <span class="popp">
+         <img class="squareface" src="img/client1.png" onclick="popup(1)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client2.png" onclick="popup(2)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client3.png" onclick="popup(3)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client4.png" onclick="popup(4)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client5.png" onclick="popup(5)">
+         </span>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="description"><center><h2 id="hd1"> </h2><p id="des1"></p></center></div>
+        </td>
+      </tr>
+      <tr>
+      <td>
+        <span class="popp">
+         <img class="squareface" src="img/client6.png" onclick="popup(6)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client7.png" onclick="popup(7)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client8.png" onclick="popup(8)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client9.png" onclick="popup(9)">
+        </span>
+        <span class="popp">
+         <img class="squareface" src="img/client10.png" onclick="popup(10)">
+        </span>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="description">
+          <center>
+          <h2 id="hd2"></h2>
+          <p id="des2"></p></center>
+          </div>
+        </td>
+      </tr>
+    </table>
+    </center>
+
+</section>
+        <!-- <section id="objectives" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Our Objectives</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- How We Do -->
+<!--     <section id="hwedo" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>How We Do</h2>
+                    <p>Content Here</p>
+                    <a href="https://www.youtube.com/watch?v=iz5l8vVOLjI" class="btn btn-default btn-lg">Show Project Structure</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <!-- Our Partners -->
+   <!--  <section id="partners" class="content-section text-center">
+        <div class="row">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Grayscale</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+    <!-- Contact Section -->
+    <section id="contact" style="">
+            <div class="container">
+                <div class="row">
+                    <div class="about_our_company" style="margin-bottom: 20px;">
+                        <h1 style="color:#fff;">Take a Coffee With Us</h1>
+                        <div class="titleline-icon"></div>
+                        <p style="color:#fff;">Tell us what you want and we shall deliver it to you better than you expect </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <form name="sentMessage" id="contactForm" novalidate="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl get">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="color:#fff;">
+                            <strong><i class="fa fa-map-marker"></i> Address</strong><br>
+                             6 Al Emdad & Al Tamween Masaken Al Mohandesin el-nasr rd, 3rd Floor, App 31, Nasr City, Cairo Governorate 11759
+                        </p>
+                        <p style="color:#fff;"><strong><i class="fa fa-phone"></i> Phone Number</strong><br>
+                            (+20)100 824 3633</p>
+                        <p style="color:#fff;">
+                            <strong><i class="fa fa-envelope"></i>  Email Address</strong><br>
+                            info@red-eg.com</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Map Section -->
+    <!-- <div id="map"></div> -->
+
+    <!-- Footer -->
+  <!--   <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2016</p>
+        </div>
+    </footer> -->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
